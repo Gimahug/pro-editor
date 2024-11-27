@@ -1,12 +1,13 @@
 import DOMPurify from 'dompurify';
 import { useEffect, useState } from 'react';
-import { getHighlighter, type Highlighter } from 'shiki/bundle/web';
+import { getHighlighter, type Highlighter } from 'shiki/bundle/full';
 import { themeConfig } from '../theme';
 
 // 目前支持的语言列表
 export const HIGHLIGHT_LANGUAGES = [
   'javascript',
   'typescript',
+  'tcl',
   'css',
   'json',
   'markdown',
